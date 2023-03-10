@@ -6,5 +6,5 @@ resource "azurerm_resource_group" "bino-provisioner-test-rg" {
   # Only runs first time the resource is created or on the destroy. 
   provisioner "local-exec" {
     command = "echo ${self.id} > rg.txt"
-  } 
+  }
 }
